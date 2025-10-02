@@ -64,7 +64,7 @@ jobs:
       DOCS_COPY_NOTEBOOKS: 1
       ARTIFACT_DAYS: 0
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ inputs.checkout }}
           # only Pytorch has/uses notebooks
