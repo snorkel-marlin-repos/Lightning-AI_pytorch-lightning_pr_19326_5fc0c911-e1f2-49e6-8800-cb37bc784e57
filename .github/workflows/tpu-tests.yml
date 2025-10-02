@@ -43,7 +43,7 @@ jobs:
             echo "CLOUDSDK_COMPUTE_ZONE=us-west4-a" >> $GITHUB_ENV
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-python@v5
